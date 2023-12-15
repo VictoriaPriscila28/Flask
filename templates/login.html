@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .btn-logout {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="login-container">
+    <h2>Login</h2>
+    <form action="/autenticar" method="post">
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" />
+  </div>
+  <div>
+    <label for="senha">Senha:</label>
+    <input type="text" id="senha"  name="senha"/>
+  </div>
+  <div>
+     <button class="btn" type='submit'>Login</button>
+
+  </div>
+</form>
+
+    <a class="btn" href="#">Cadastrar Usuário</a>
+    <a class="btn" href="#">Alterar Senha</a>
+
+    <a class="btn btn-logout" href="#">Sair</a>
+
+</div>
+
+</body>
+</html>
