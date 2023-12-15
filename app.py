@@ -38,6 +38,12 @@ def login_validar():
 
     return request.form
 
+
+@app.route('/cadastrar')
+def cadastrar():
+    return render_template('cadastrar.html')
+
+
 @app.route('/inventario')
 def inventario():
     return render_template('inventario.html')
@@ -183,7 +189,7 @@ def consultar_inventario():
 
 
 # Função para cadastrar um novo usuário no sistema
-@app.route('/cadastrar_usuario', methods=['POST'])
+"""""@app.route('/cadastrar_usuario', methods=['POST'])
 def cadastrar_usuario():
     conexao = conectar_bd()
     cursor = conexao.cursor()
@@ -202,7 +208,7 @@ def cadastrar_usuario():
         print("Usuário cadastrado com sucesso!")
 
         cursor.close()
-        conexao.close()
+        conexao.close()"""
 
 
 # Função para alterar a senha de um usuário
